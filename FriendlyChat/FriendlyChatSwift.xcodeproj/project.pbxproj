@@ -11,6 +11,7 @@
 		2C595F061B34B73A00355AE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C595F041B34B73A00355AE7 /* Constants.swift */; };
 		2C8562851AFAB65F00F0B24B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627E1AFAB65F00F0B24B /* Images.xcassets */; };
 		2C8562871AFAB65F00F0B24B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */; };
+		57E6F36721A1B47C002F9F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E6F36621A1B47C002F9F46 /* GoogleService-Info.plist */; };
 		5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */; };
 		5F5A53801ADE67D500F81DF0 /* FCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537F1ADE67D500F81DF0 /* FCViewController.swift */; };
 		A92476E81D6F96C300A96C4B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92476E61D6F96C300A96C4B /* Roboto-Regular.ttf */; };
@@ -25,6 +26,7 @@
 		2C85627E1AFAB65F00F0B24B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		47BDA9BA1B03D338F2B3A7F7 /* Pods-FriendlyChatSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChatSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyChatSwift/Pods-FriendlyChatSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		57E6F36621A1B47C002F9F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F5A53791ADE67D500F81DF0 /* FriendlyChatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyChatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F5A537F1ADE67D500F81DF0 /* FCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		5F5A537B1ADE67D500F81DF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57E6F36621A1B47C002F9F46 /* GoogleService-Info.plist */,
 				107960711C612531003DB6CC /* Main.storyboard */,
 				107960741C61253B003DB6CC /* Info.plist */,
 				2C85627A1AFAB65F00F0B24B /* shared */,
@@ -190,6 +193,7 @@
 				A92476E81D6F96C300A96C4B /* Roboto-Regular.ttf in Resources */,
 				2C8562851AFAB65F00F0B24B /* Images.xcassets in Resources */,
 				A92476E91D6F96C300A96C4B /* RobotoMono-Regular.ttf in Resources */,
+				57E6F36721A1B47C002F9F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +206,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FriendlyChatSwift/Pods-FriendlyChatSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,13 +242,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendlyChatSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED8993B59ED135CE7FC6FF4D /* [CP] Copy Pods Resources */ = {
@@ -232,9 +260,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FriendlyChatSwift/Pods-FriendlyChatSwift-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
