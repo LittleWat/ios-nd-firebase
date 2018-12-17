@@ -252,13 +252,29 @@ extension FCViewController: UITableViewDelegate, UITableViewDataSource {
         let messageSnapshot: DataSnapshot! = messages[indexPath.row]
         let message = messageSnapshot.value as! [String:String]
         let name = message[Constants.MessageFields.name] ?? "[username]"
-        let text = message[Constants.MessageFields.text] ?? "[message]"
-        cell!.textLabel?.text = name + ":" + text
-        cell!.imageView?.image = self.placeholderImage
-        cell.detailTextLabel?.text = "hogehoge"
+
+        if let imageUrl = message[Constants.MessageFields.imageUrl] {
+            cell!.textLabel?.text = "sent by: \(name)"
+            Storage.storage().reference(forURL: imageUrl).getData(maxSize: INT64_MAX) { (data, error) in
+                guard error == nil else {
+                    print("error downloading: \(error!)")
+                    return
+                }
+                let messageImage = UIImage(data: data!, scale: 50)
+                if cell == tableView.cellForRow(at: indexPath) {
+                    DispatchQueue.main.async {
+                        cell.imageView?.image = messageImage
+                        cell.setNeedsLayout()
+                    }
+                }
+            }
+        } else {
+            let text = message[Constants.MessageFields.text] ?? "[message]"
+            cell!.textLabel?.text = name + ":" + text
+            cell!.imageView?.image = self.placeholderImage
+        }
         
         return cell!
-        // TODO: update cell to display message data
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
