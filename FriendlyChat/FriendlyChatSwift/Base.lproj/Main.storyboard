@@ -71,31 +71,20 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="messageCell" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" textLabel="mU3-IP-3js" detailTextLabel="cuD-MN-r1i" imageView="5V1-iP-kqa" style="IBUITableViewCellStyleSubtitle" id="f9j-WJ-CnU">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="messageCell" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" textLabel="rkz-lG-2ED" style="IBUITableViewCellStyleDefault" id="f9j-WJ-CnU">
                                         <rect key="frame" x="0.0" y="22" width="351" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9j-WJ-CnU" id="6Nv-bs-fSR">
                                             <rect key="frame" x="0.0" y="0.0" width="318" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mU3-IP-3js">
-                                                    <rect key="frame" x="78" y="8" width="33.5" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rkz-lG-2ED">
+                                                    <rect key="frame" x="15" y="0.0" width="301" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cuD-MN-r1i">
-                                                    <rect key="frame" x="78" y="28.5" width="33" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="ic_account_circle" id="5V1-iP-kqa">
-                                                    <rect key="frame" x="15" y="0.0" width="48" height="48"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -189,13 +178,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DHD-HU-kCB" secondAttribute="trailing" constant="-4" id="xhU-Sl-tIr"/>
                             <constraint firstItem="saZ-zf-ltO" firstAttribute="centerX" secondItem="4Dk-Kp-xdq" secondAttribute="centerX" id="yFC-zL-99b"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="soz-qM-lu1"/>
-                                <exclude reference="gLD-jV-qSR"/>
-                                <exclude reference="saZ-zf-ltO"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="uGd-VQ-oms" appends="YES" id="YTW-TD-OPd"/>
                             <outletCollection property="gestureRecognizers" destination="yKK-fC-WS7" appends="YES" id="dhk-Y2-sKt"/>
@@ -230,7 +212,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_account_circle" width="48" height="48"/>
         <image name="ic_add_a_photo" width="48" height="48"/>
     </resources>
 </document>
